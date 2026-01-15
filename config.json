@@ -1,0 +1,27 @@
+{
+  "agent": {
+    "name": "X Posting Agent",
+    "version": "1.0.0",
+    "enabled": true
+  },
+  "posting": {
+    "interval_hours": 4,
+    "posts_per_cycle": 1,
+    "max_posts_per_day": 6,
+    "content_type": "mixed"
+  },
+  "claude": {
+    "model": "claude-3-5-sonnet",
+    "temperature": 0.7,
+    "max_tokens": 280,
+    "use_code_interpreter": true
+  },
+  "x_api": {
+    "api_version": "2",
+    "rate_limit_handling": "queue"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/agent.log"
+  }
+}
