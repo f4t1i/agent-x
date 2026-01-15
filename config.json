@@ -1,0 +1,54 @@
+{
+  "agent": {
+    "name": "X Hyper-Agent",
+    "version": "2.0.0",
+    "enabled": true,
+    "personality_temperature": 0.7
+  },
+  "posting": {
+    "interval_hours": 4,
+    "posts_per_cycle": 1,
+    "max_posts_per_day": 6,
+    "content_type": "mixed",
+    "enable_threads": true,
+    "enable_images": false
+  },
+  "claude": {
+    "model": "claude-3-5-sonnet-20241022",
+    "temperature": 0.7,
+    "max_tokens": 4096,
+    "use_code_interpreter": true
+  },
+  "interaction": {
+    "enable_replies": true,
+    "enable_trendjacking": false,
+    "enable_influencer_orbit": true,
+    "reply_check_interval_minutes": 15,
+    "influencer_accounts": [
+      "elonmusk",
+      "AndrewYNg",
+      "ylecun"
+    ],
+    "trendjacking_keywords": [
+      "AI",
+      "Machine Learning",
+      "Claude",
+      "GPT",
+      "LLM"
+    ]
+  },
+  "memory": {
+    "enable_rag": true,
+    "enable_feedback_loop": true,
+    "vector_db_path": "./data/vectordb",
+    "feedback_check_hours": 24
+  },
+  "x_api": {
+    "api_version": "2",
+    "rate_limit_handling": "queue"
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/agent.log"
+  }
+}
