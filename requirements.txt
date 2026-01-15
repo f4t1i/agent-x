@@ -1,0 +1,23 @@
+# Claude SDK
+anthropic>=0.7.0
+
+# X API Client
+tweepy>=4.14.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Logging and Monitoring
+python-json-logger>=2.0.7
+
+# Scheduling
+schedule>=1.2.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# Data Processing
+pydantic>=2.0.0
+
+# Utilities
+click>=8.1.0
